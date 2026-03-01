@@ -44,7 +44,7 @@ interface PageProps {
 export default function Content({post, comments} : Props) {
     const { auth } = usePage().props as PageProps;
     const {processing, delete: destroy} =useForm();
-    const {data, setData, processing: loading, post: commenting, errors} = useForm({
+    const {data, setData, post: commenting} = useForm({
         post_id: post.id,
         comment: ''
     });
