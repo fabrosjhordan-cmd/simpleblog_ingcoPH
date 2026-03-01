@@ -23,6 +23,7 @@ export default function Login({
     canRegister,
 }: Props) {
     return (
+        <>
         <AuthLayout
             title="Log in to your account"
             description="Enter your email and password below to log in"
@@ -116,5 +117,8 @@ export default function Login({
                 </div>
             )}
         </AuthLayout>
+       </>
     );
+
+    
 }
